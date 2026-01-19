@@ -5,7 +5,7 @@ FROM alpine:latest
 RUN apk add --no-cache openssh-server openssh-client iproute2 iputils
 
 # Allow root login and set a password for SSH (for testing)
-RUN echo 'root:root123' | chpasswd
+RUN echo 'administrator:root123' | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # Generate SSH keys
