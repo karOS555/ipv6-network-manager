@@ -4,7 +4,7 @@ import backend
 import database
 import time
 
-# Initialisierung
+# initialization
 database.init_db()
 st.set_page_config(page_title="IPv6 NetManager", page_icon="🌐", layout="wide")
 
